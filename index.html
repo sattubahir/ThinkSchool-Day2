@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Satyajit Bahir</title>
+  <title>Satyajit Bahir | Portfolio</title>
   <style>
-   
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
       line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
     }
 
-    /* Header */
     header {
       background: #333;
       color: #fff;
@@ -24,73 +22,40 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
     }
-
-    /* Navigation */
     nav a {
       color: #fff;
-      text-decoration: none;
       margin: 0 10px;
+      text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
-      color: #ffd700; /* gold hover */
+      color: #ffd700;
     }
 
-    /* Sections */
-    section {
-      padding: 20px;
-      margin: 20px auto;
+    main {
       width: 80%;
-      max-width: 800px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    section {
       background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 6px;
       border: 1px solid #ddd;
-      border-radius: 8px;
     }
     section h2 {
-      color: #444;
       margin-top: 0;
+      color: #444;
     }
-
-    /* Project Articles */
     article {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 6px;
-      background: #fafafa;
+      margin-bottom: 15px;
     }
-    article h3 {
-      margin: 0 0 10px;
-    }
-    article a {
-      display: inline-block;
-      margin-top: 8px;
-      color: #0066cc;
-    }
-    article a:hover {
-      text-decoration: underline;
+    ul {
+      padding-left: 20px;
     }
 
-    #contact ul {
-  list-style: none;
-  padding: 0;
-}
-#contact li {
-  margin: 8px 0;
-  font-size: 1rem;
-}
-#contact a {
-  color: #0066cc;
-  text-decoration: none;
-}
-#contact a:hover {
-  text-decoration: underline;
-}
-
-
-    /* Footer */
     footer {
       text-align: center;
       padding: 15px;
@@ -99,62 +64,112 @@
       margin-top: 20px;
     }
 
+    /* Contact Section */
+    #contact ul {
+      list-style: none;
+      padding: 0;
+    }
+    #contact li {
+      margin: 8px 0;
+    }
+    #contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Satyajit Bahir</h1>
+    <p>Computer Engineering Graduate | Java & Backend Developer</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+    <!-- About -->
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! My name is <strong>Satyajit Bahir</strong>.  
-         Recent Computer Engineering graduate with hands-on experience in developing and maintaining web 
-applications using Java, SQL, and modern web technologies. Skilled in backend development and enthusiastic about 
-solving real-world problems through software. Adept at collaborating within teams, adapting to new technologies, and 
-continuously expanding my skill set. Eager to contribute technical knowledge and a strong learning mindset to a 
-dynamic organization as a software engineer.</p>
+      <p>Recent Computer Engineering graduate with hands-on experience in developing and maintaining web 
+      applications using Java, SQL, and modern web technologies. Skilled in backend development and enthusiastic 
+      about solving real-world problems through software. Eager to contribute technical knowledge and a strong 
+      learning mindset as a software engineer.</p>
     </section>
 
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.E. Computer Engineering</strong>, G H Raisoni Institute Of Engineering And Technology, Pune (2020 - 2024)</li>
+        <li><strong>HSC (Class XII)</strong>, L N Hoshing Junior College, Jamkhed (2019 - 2020)</li>
+        <li><strong>SSC (Class X)</strong>, L N Hoshing Vidyalaya, Jamkhed (2017 - 2018)</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <article>
+        <h3>Software Intern – Pheonixgen Systems (Dec 2023 – Jul 2024)</h3>
+        <ul>
+          <li>Developed and maintained web applications using Java, JDBC, Hibernate, Servlets, and JSP.</li>
+          <li>Performed CRUD operations and built robust database interaction layers using Hibernate and SQL.</li>
+          <li>Integrated Java-based backend systems with MySQL databases.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Technical:</strong> Java, Hibernate, Spring Boot, SQL, JDBC, HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> Eclipse, VS Code, SQL Workbench</li>
+        <li><strong>Certifications:</strong> Java Fullstack (VibrantMinds Technologies), Introduction to IoT (NPTEL)</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
     <section id="projects">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <article>
-        <h3>Cerebral Neoplasm Detection From MRI Using CNN</h3>
-        <p>Developed a deep learning-based system to detect brain tumors from MRI images using a Convolutional Neural Network (CNN) model. 
-            The project includes a Flask web application that allows users to upload MRI scans and receive instant predictions on tumor presence.</p>
-        <a href="#">View Project</a>
+        <h3>Cerebral Neoplasm Detection from MRI using CNN</h3>
+        <p>Developed a CNN model to classify MRI images for brain tumor detection, aiding early diagnosis. 
+        Trained on Kaggle datasets and validated accuracy, with findings published in IRJET.</p>
+        <p><strong>Tech Stack:</strong> Python, Deep Learning, Flask</p>
       </article>
       <article>
-        <h3>Farmer Conection App</h3>
-        <p>Designed a web-based application to help farmers connect with nearby farmers for sharing and trading farm products. 
-            The platform allows farmers to register, list their products, and find others who produce items they don’t grow themselves—helping them reduce market costs and improve collaboration.</p>
-        <a href="#">View Project</a>
+        <h3>Farmer Connection App</h3>
+        <p>A platform that connects farmers to share and trade farm products with nearby farmers, reducing 
+        dependency on high market prices and encouraging collaboration.</p>
+        <p><strong>Tech Stack:</strong> Java, Spring Boot, Hibernate, MySQL, HTML/CSS/JS</p>
       </article>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-  <h2>Contact Me</h2>
-
-  <ul>
-    <li><strong>Email:</strong> satyajitbahir@gmail.com</li>
-    <li><strong>Phone:</strong> +91 9067603003</li>
-    <li><strong>Location:</strong> Pune, India</li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satyajit-bahir-21a052207" target="_blank">View Profile</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/sattubahir" target="_blank">View Profile</a></li>
-  </ul>
-</section>
-
+      <h2>Contact Me</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:sattu3003@gmail.com">sattu3003@gmail.com</a></li>
+        <li><strong>Phone:</strong> +91-8530037919</li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satyajit-bahir-21a052207" target="_blank">linkedin.com/in/satyajit-bahir</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/sattubahir" target="_blank">github.com/sattubahir</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Satyajit Bahir. All Rights Reserved.</p>
+    <p>&copy; 2025 Satyajit Bahir. All rights reserved.</p>
   </footer>
 
 </body>
