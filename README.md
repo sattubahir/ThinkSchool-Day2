@@ -167,3 +167,16 @@ Below is the full content of my ".vscode/settings.json" file --
   "prettier.requireConfig": true  
 }
 
+## Installed VS Code Extensions
+- esbenp.prettier-vscode         <!-- Prettier code formatter 
+- dbaeumer.vscode-eslint         <!-- ESLint integration for code linting 
+- formulahendry.code-runner      <!-- To run code snippets in terminal 
+- ritwickdey.LiveServer          <!-- Live Server for local development
+- redhat.java                   <!-- Java Language Support 
+- vscjava.vscode-maven           <!-- Apache Maven for Java projects 
+- vscjava.vscode-java-pack       <!-- Java Extension Pack 
+- ms-python.python               <!-- Python language support (based on python interpreter path) 
+- ms-vscode.cpptools             <!-- C/C++ tools maybe for cmake support 
+- ms-vscode.cmake-tools          <!-- CMake integration 
+- streetsidesoftware.code-spell-checker <!-- Spell checker as cSpell used 
+- eamodio.gitlens                <!-- GitLens for enhanced git capabilities 
