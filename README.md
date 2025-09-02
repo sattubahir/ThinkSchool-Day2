@@ -180,3 +180,9 @@ Below is the full content of my ".vscode/settings.json" file --
 - ms-vscode.cmake-tools          <!-- CMake integration 
 - streetsidesoftware.code-spell-checker <!-- Spell checker as cSpell used 
 - eamodio.gitlens                <!-- GitLens for enhanced git capabilities 
+
+## Commit Message Convention 
+  this project follows the Conventional Commits
+  Example:
+  -'chore': Changes to the build process or auxiliary tools
+  
