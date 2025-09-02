@@ -5,96 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satyajit Bahir | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-    }
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Segoe UI',sans-serif; background:#eef2f3; color:#333; line-height:1.6;}
 
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    /* ===== Hero Section ===== */
+    .hero {
+      background: linear-gradient(135deg,#0f766e,#115e59);
+      color:#fff;
+      text-align:center;
+      padding:100px 20px;
     }
-    header h1 {
-      margin: 0;
+    .hero h1 {font-size:3rem; margin-bottom:10px;}
+    .hero p {font-size:1.2rem; margin-bottom:20px;}
+    .hero a {
+      background:#fbbf24; color:#000; padding:12px 24px; 
+      text-decoration:none; font-weight:bold; border-radius:6px;
+      transition:background 0.3s;
     }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
+    .hero a:hover {background:#facc15;}
 
-    main {
-      width: 80%;
-      max-width: 900px;
-      margin: 20px auto;
-    }
-    section {
-      background: #fff;
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 6px;
-      border: 1px solid #ddd;
-    }
+    /* ===== Main Sections ===== */
+    main {width:90%; max-width:1100px; margin:40px auto;}
+    section {margin:40px 0;}
     section h2 {
-      margin-top: 0;
-      color: #444;
-    }
-    article {
-      margin-bottom: 15px;
-    }
-    ul {
-      padding-left: 20px;
+      color:#0f766e;
+      border-bottom:3px solid #14b8a6;
+      display:inline-block;
+      margin-bottom:20px;
+      padding-bottom:5px;
     }
 
+    /* ===== About ===== */
+    #about p {font-size:1.05rem;}
+
+    /* ===== Skills Grid ===== */
+    #skills ul {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:15px;
+      list-style:none;
+    }
+    #skills li {
+      background:#fff;
+      padding:15px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* ===== Projects Grid ===== */
+    .projects-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+    .project-card {
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform:translateY(-5px);
+      box-shadow:0 6px 14px rgba(0,0,0,0.15);
+    }
+    .project-card h3 {margin-bottom:10px; color:#115e59;}
+    .project-card a {color:#0f766e; text-decoration:none; font-weight:500;}
+    .project-card a:hover {text-decoration:underline;}
+
+    /* ===== Timeline (Experience + Education) ===== */
+    .timeline {
+      border-left:3px solid #14b8a6;
+      padding-left:20px;
+      margin-left:10px;
+    }
+    .timeline article {
+      margin-bottom:20px;
+    }
+    .timeline h3 {margin-bottom:5px; color:#115e59;}
+
+    /* ===== Contact ===== */
+    #contact ul {list-style:none; padding:0;}
+    #contact li {margin:10px 0;}
+    #contact a {color:#0f766e; text-decoration:none;}
+    #contact a:hover {text-decoration:underline;}
+
+    /* ===== Footer ===== */
     footer {
-      text-align: center;
-      padding: 15px;
-      background: #333;
-      color: #fff;
-      margin-top: 20px;
+      text-align:center;
+      padding:20px;
+      background:#0f766e;
+      color:#fff;
+      margin-top:40px;
     }
-
-    /* Contact Section */
-    #contact ul {
-      list-style: none;
-      padding: 0;
-    }
-    #contact li {
-      margin: 8px 0;
-    }
-    #contact a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    #contact a:hover {
-      text-decoration: underline;
-    }
+    footer a {color:#fff; margin:0 10px; text-decoration:none;}
+    footer a:hover {text-decoration:underline;}
   </style>
 </head>
 <body>
 
-  <header>
+  <!-- Hero Section -->
+  <section class="hero">
     <h1>Satyajit Bahir</h1>
     <p>Computer Engineering Graduate | Java & Backend Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <a href="#projects">View Projects</a>
+  </section>
 
   <main>
     <!-- About -->
@@ -106,59 +121,64 @@
       learning mindset as a software engineer.</p>
     </section>
 
-    <!-- Education -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.E. Computer Engineering</strong>, G H Raisoni Institute Of Engineering And Technology, Pune (2020 - 2024)</li>
-        <li><strong>HSC (Class XII)</strong>, L N Hoshing Junior College, Jamkhed (2019 - 2020)</li>
-        <li><strong>SSC (Class X)</strong>, L N Hoshing Vidyalaya, Jamkhed (2017 - 2018)</li>
-      </ul>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Software Intern – Pheonixgen Systems (Dec 2023 – Jul 2024)</h3>
-        <ul>
-          <li>Developed and maintained web applications using Java, JDBC, Hibernate, Servlets, and JSP.</li>
-          <li>Performed CRUD operations and built robust database interaction layers using Hibernate and SQL.</li>
-          <li>Integrated Java-based backend systems with MySQL databases.</li>
-        </ul>
-      </article>
-    </section>
-
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li><strong>Technical:</strong> Java, Hibernate, Spring Boot, SQL, JDBC, HTML, CSS, JavaScript</li>
+        <li><strong>Languages:</strong> Java, SQL, JavaScript</li>
+        <li><strong>Frameworks:</strong> Hibernate, Spring Boot</li>
+        <li><strong>Web:</strong> HTML, CSS</li>
         <li><strong>Tools:</strong> Eclipse, VS Code, SQL Workbench</li>
-        <li><strong>Certifications:</strong> Java Fullstack (VibrantMinds Technologies), Introduction to IoT (NPTEL)</li>
+        <li><strong>Certifications:</strong> Java Fullstack, IoT (NPTEL)</li>
       </ul>
     </section>
 
     <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
-      <article>
-        <h3>Cerebral Neoplasm Detection from MRI using CNN</h3>
-        <p>Developed a CNN model to classify MRI images for brain tumor detection, aiding early diagnosis. 
-        Trained on Kaggle datasets and validated accuracy, with findings published in IRJET.</p>
-        <p><strong>Tech Stack:</strong> Python, Deep Learning, Flask</p>
-      </article>
-      <article>
-        <h3>Farmer Connection App</h3>
-        <p>A platform that connects farmers to share and trade farm products with nearby farmers, reducing 
-        dependency on high market prices and encouraging collaboration.</p>
-        <p><strong>Tech Stack:</strong> Java, Spring Boot, Hibernate, MySQL, HTML/CSS/JS</p>
-      </article>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Cerebral Neoplasm Detection</h3>
+          <p>Deep learning CNN model to detect brain tumors from MRI images. Integrated with Flask web app for predictions.</p>
+          <p><strong>Tech Stack:</strong> Python, TensorFlow/Keras, Flask</p>
+          <a href="#">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+          <h3>Farmer Connection App</h3>
+          <p>Platform that connects farmers to share and trade products with nearby farmers, reducing dependency on high market prices.</p>
+          <p><strong>Tech Stack:</strong> Java, Spring Boot, Hibernate, MySQL</p>
+          <a href="#">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="timeline">
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        <article>
+          <h3>Software Intern – Pheonixgen Systems</h3>
+          <p>(Dec 2023 – Jul 2024)</p>
+          <p>Worked on Java, Hibernate, JSP, Servlets, and database integration.</p>
+        </article>
+        <article>
+          <h3>B.E. Computer Engineering</h3>
+          <p>G H Raisoni Institute Of Engineering And Technology, Pune (2020 – 2024)</p>
+        </article>
+        <article>
+          <h3>HSC</h3>
+          <p>L N Hoshing Junior College, Jamkhed (2019 – 2020)</p>
+        </article>
+        <article>
+          <h3>SSC</h3>
+          <p>L N Hoshing Vidyalaya, Jamkhed (2017 – 2018)</p>
+        </article>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <ul>
         <li><strong>Email:</strong> <a href="mailto:sattu3003@gmail.com">sattu3003@gmail.com</a></li>
         <li><strong>Phone:</strong> +91-8530037919</li>
@@ -168,9 +188,16 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Satyajit Bahir. All rights reserved.</p>
+    <p>&copy; 2025 Satyajit Bahir</p>
+    <p>
+      <a href="mailto:sattu3003@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/satyajit-bahir-21a052207" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/sattubahir" target="_blank">GitHub</a>
+    </p>
   </footer>
 
 </body>
 </html>
+
