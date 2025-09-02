@@ -43,4 +43,4 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 - `style: apply Prettier formatting`
 
 ## Live Website 
-- https://sattubahir.github.io/ThinkSchool-Day2/
+- https://sattubahir.github.io/web-playground/
