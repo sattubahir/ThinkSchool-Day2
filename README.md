@@ -1,4 +1,4 @@
-##Personal Portfolio - Satyajit Bahir
+## Personal Portfolio - Satyajit Bahir
 
 This is my personal portfolio website built with **HTML5 & CSS3**.  
 It showcases my education, skills, projects, and experience in software development.  
@@ -32,9 +32,9 @@ This repository uses the following **Visual Studio Code extensions**:
 - **Java Extension Pack**  → Java development support  
 - **GitHub Pull Requests and Issues**  → GitHub integration  
 
-## 📝 Commit Convention
+## Commit Convention
 
-This project follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages.
+I follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to keep my commit history clean and readable.
 
 **Examples:**
 - `feat: add new project section`
@@ -43,4 +43,4 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 - `style: apply Prettier formatting`
 
 ## Live Website 
-- https://sattubahir.github.io/web-playground/
+Check my portfolio here:- https://sattubahir.github.io/web-playground/
